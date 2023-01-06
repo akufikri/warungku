@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Koulen&family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 476px) {
+  .navbar-nav {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    display: none;
+  }
+  .bg {
+    height: 100vh;
+    width: 100%;
+    filter: brightness(0.5);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    width: 80%;
+  }
+  .bg {
+    height: 100vh;
+    width: 100%;
+    filter: brightness(0.5);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar {
+  transition: 0.6s;
+}
+.navbar-scroll {
+  background-color: black;
+}
+.bg {
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(0.5);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+.food {
+  width: 80%;
+}
+.fa-instagram {
+  text-decoration: none;
+  transition: 0.6s;
+  color: white;
+}
+.fa-instagram:hover {
+  color: rgb(52, 123, 255);
+}
+.fa-whatsapp {
+  text-decoration: none;
+  transition: 0.6s;
+  color: white;
+}
+.fa-whatsapp:hover {
+  color: rgb(52, 255, 86);
+}
+.fa-youtube {
+  text-decoration: none;
+  transition: 0.6s;
+  color: white;
+}
+.fa-youtube:hover {
+  color: rgb(230, 37, 37);
+}
+img.food {
+  animation: float 4s ease-out infinite;
+}
+@keyframes float {
+  50% {
+    transform: translateY(20px);
+  }
+}
